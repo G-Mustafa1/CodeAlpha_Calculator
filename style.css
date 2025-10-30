@@ -195,7 +195,7 @@ body {
    border-bottom: 1px solid #00c4ff;
 }
 
-@media(max-width: 400px) {
+@media(max-width: 370px) {
    .mein {
       width: 300px;
    }

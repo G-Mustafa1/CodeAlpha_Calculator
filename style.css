@@ -1,0 +1,215 @@
+body {
+   background: linear-gradient(135deg, #3e3b3b, #413535, #2a2929);
+   /* background: linear-gradient(135deg, #0d0d0d, #1a1a1a, #222); */
+   font-family: "Rubik", sans-serif;
+   color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   /* overflow: scroll; */
+}
+.mein {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 340px;
+   /* height: ; */
+   gap: 30px;
+}
+
+.calculator {
+   position: relative;
+   background: linear-gradient(145deg, #363636, #545050);
+   /* background: linear-gradient(145deg, #292929, #1e1e1e); */
+   border: 1px solid #3a3a3a;
+   border-radius: 20px;
+   padding: 30px 25px;
+   box-shadow:
+      8px 8px 20px #000,
+      -6px -6px 16px #333;
+   transition: all 0.3s ease-in-out;
+}
+
+.calculator:hover {
+   transform: translateY(-5px);
+   box-shadow:
+      10px 10px 25px #000,
+      -6px -6px 18px #444;
+}
+
+.calculator-1 input {
+   background: #f8f8f8;
+   border: none;
+   outline: none;
+   color: #111;
+   font-weight: bold;
+   font-size: 30px;
+   height: 50px;
+   width: 250px;
+   text-align: right;
+   margin-bottom: 10px;
+   border-radius: 12px;
+   padding: 8px 10px;
+   box-shadow:
+      inset 2px 2px 5px #ccc,
+      inset -2px -2px 5px #fff;
+   transition: 0.3s ease;
+}
+
+.calculator-1 input:hover {
+   background: #ececec;
+}
+.calculator-2 button {
+   font-size: 22px;
+   font-weight: 600;
+   width: 55px;
+   height: 55px;
+   margin: 6px;
+   border: none;
+   border-radius: 14px;
+   cursor: pointer;
+   color: #fff;
+   background: linear-gradient(145deg, #3a3a3a, #2a2a2a);
+   box-shadow:
+      4px 4px 8px #111,
+      -4px -4px 8px #444;
+   transition: all 0.25s ease;
+   text-align: center;
+}
+
+.calculator-2 button:hover {
+   background: #00c4ff;
+   color: #111;
+   transform: scale(1.05);
+   box-shadow:
+      0 0 10px #00c4ff,
+      inset 0 0 8px #00c4ff;
+}
+
+.calculator-2 button:active {
+   transform: scale(0.95);
+   background: #0098cc;
+}
+
+.btn1 {
+   color: #ff5c8d;
+   background: linear-gradient(145deg, #4c2a2a, #2b1919);
+   box-shadow:
+      4px 4px 8px #111,
+      -4px -4px 8px #5a2a2a;
+}
+
+.btn1:hover {
+   background: #ff5c8d;
+   color: #fff;
+   box-shadow:
+      0 0 12px #ff5c8d,
+      inset 0 0 10px #ff5c8d;
+}
+
+.btn1:active {
+   background: #e04877;
+}
+
+.icon {
+   color: #00c4ff;
+   position: absolute; 
+   right: 20px;
+   top: 10px;
+   /* bottom: 10px; */
+   display: block;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+.icon:hover {
+   color: #ff5c8d;
+   transform: rotate(20deg);
+}
+
+.del i,
+.xmark i {
+   color: #ff5c8d;
+   font-size: 18px;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+.del i:hover,
+.xmark i:hover {
+   color: #00c4ff;
+   transform: scale(1.2);
+}
+
+.history {
+   background: linear-gradient(145deg, #363636, #545050);
+   border-radius: 18px;
+   color: #fff;
+   width: 350px;
+   height: 450px;
+   box-shadow:
+      6px 6px 15px #111,
+      -4px -4px 15px #555;
+   display: none;
+   flex-direction: column;
+}
+
+.historys {
+   /* height: 200px; */
+   padding: 20px 25px;
+
+}
+
+.ps{
+   overflow-y: scroll;
+   height: 250px;
+}
+
+
+.historys h1 {
+   text-align: center;
+   font-family: "Bebas Neue", sans-serif;
+   font-size: 32px;
+   color: #00c4ff;
+   margin-bottom: 15px;
+}
+
+
+.ps::-webkit-scrollbar-thumb {
+   background: #00c4ff;
+   border-radius: 10px;
+}  
+
+.ps::-webkit-scrollbar{
+   width: 10px;
+}
+.ps::-webkit-scrollbar-track{
+   background: #2b1919;
+   border-radius: 10px;
+}
+
+.p1 {
+   font-size: 20px;
+   margin-bottom: 10px;
+   border-bottom: 1px solid #00c4ff;
+}
+
+@media(max-width: 400px) {
+   .mein {
+      width: 300px;
+   }
+   .calculator-2 button{
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+   }
+   .history {
+      width: 300px
+   }
+   .calculator-1 input{
+      width: 200px;
+      height: 30px;
+      font-size: 36px;
+   }
+}
